@@ -1,0 +1,29 @@
+#wrapper{
+    background: lightslategray;
+    padding: 40px;
+    text-align: center;
+    width:100%;
+}
+
+#scheduleTable{
+    background-color: lightskyblue;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+th{
+    padding: 10px;
+    width: auto;
+}
+.jumbotron{
+    text-align: center;
+    background: lightskyblue;
+}
+#addTrainDiv{
+    background-color: lightskyblue;
+    text-align: center;
+    
+}
+/* input{
+    width:70%;
+} */

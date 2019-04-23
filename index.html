@@ -1,0 +1,72 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+
+</head>
+
+<body>
+    <div class="container" id="wrapper">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Train Scheduler!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <table id="scheduleTable">
+                    <tr id="row">
+                        <th id="trainName">Train Name</th>
+                        <th id="destination">Destination</th>
+                        <th id="frequency">Frequency</th>
+                        <th id="nextTrainTime">Next Train Time</th>
+                        <th id="minAway">Time Until Next Train</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-4" id="addTrainDiv">
+
+                <label>Train Name</label>
+                <br>
+                <input type="text" id="trainNameInput">
+                <br>
+                <br>
+                <label>Destination</label>
+                <br>
+                <input type="text" id="destinationInput">
+                <br>
+                <br>
+                <label>First Train Time</label>
+                <br>
+                <input type="text" id="firstTrainTimeInput">
+                <br>
+                <br>
+                <label>Frequency</label>
+                <br>
+                <input type="text" id="frequencyInput">
+                <br>
+                <br>
+                <button id="submitButton">Submit</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
